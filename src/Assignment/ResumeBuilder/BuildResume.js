@@ -9,10 +9,11 @@ import Resume from '../ResumeTempelate/Resume';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import test from '../../data/images.jpeg';
-import Language_Skill from './Language&Skills/Language_Skill';
+import Language_Skill from './Language&Skills/Skill';
 import ReferenceInfo from './ReferenceInfo/ReferenceInfo';
 import {FiDownload} from 'react-icons/fi';
 import MyButton from '../../components/MyButton';
+import Language from './Language&Skills/Language';
 
 export default function BuildResume(){
 
@@ -171,6 +172,7 @@ export default function BuildResume(){
                     <PersonalInfo sendContact={sendContact}/>
                     <EducationInfo sendEducation={sendEducation}/>
                     <Language_Skill sendExpertise={sendExpertise} sendLanguage={sendLanguage}/>
+                    <Language sendExpertise={sendExpertise} sendLanguage={sendLanguage}/>
                     <ExperienceInfo sendExperienceInfo={sendExperienceInfo}/>
                     <ReferenceInfo sendReferenceInfo={sendReferenceInfo}/>
 

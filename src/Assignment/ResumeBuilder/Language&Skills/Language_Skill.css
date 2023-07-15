@@ -10,9 +10,22 @@
 }
 
 .LS-Forms{
+    border-bottom: 1px solid rgba(190, 185, 185, 0.617) ;
+    padding-bottom: 30px ;
+}
+
+.LS-Forms>div{
     border: 1px solid rgba(190, 185, 185, 0.617) ;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: grid;
-    place-items: center;
-    grid-template-columns: auto auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+}
+.LS-Forms-btns{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.LS-Forms-btns>button{
+    margin-right: 10px;
 }

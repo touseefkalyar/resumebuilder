@@ -1,24 +1,37 @@
 .btn{
     color:white;
     background-color: #4314B6;
-    width:150px;
-    height: 40px;
-    font-size: 20px;
     border-radius: 5px;
-    outline: none;
     border: none;
     display: flex;
+    padding: 6px 20px;
+    font-size: 16px;
     align-items: center;
-    justify-content: space-evenly;
- }
-
- .btn-secondary{
-    width:100px;
-    height: 40px;
-    font-size: 20px;
  }
 
  .btn:hover{
     cursor: pointer;
-    transform: scale(0.99);
+    background-color: #5327c2;
  }
+
+ .btn-logo{
+   line-height: 8px;
+ }
+
+ .btn-title{
+   margin-left: 5px;
+ }
+
+ 
+
+ .btn-secondary{
+    color: inherit;
+    background-color: white;
+    border: 1px solid black;
+ }
+
+ .btn-secondary:hover{
+   background-color: #43298612;
+   border: 1px solid #4314B6;
+   transition: 0.5s;
+}

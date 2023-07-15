@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import MyInput from '../../../components/MyInput';
 import './ExperienceInfo.css';
 import DropDownField from '../../../components/dropdownfield';
-
+import MyButton from '../../../components/MyButton';
+import {BsCheckLg} from 'react-icons/bs';
+import {AiOutlinePlus} from 'react-icons/ai';
+import {RiDeleteBin6Line} from 'react-icons/ri';
 
 export default function ExperienceInfo({sendExperienceInfo}){
 
@@ -35,28 +38,19 @@ export default function ExperienceInfo({sendExperienceInfo}){
     )
 
     const expsection= <div className='ExperienceInfo-Form'>
-        <div className='Experience_title'>Experience 1</div>
-        <div className='Experience1'>
-        <MyInput type='text' name='Institute' placeholder='Institute/Organization*'  onChange={handleInstitute}/>
-        <MyInput type='text' name='Position' placeholder='Position' onChange={handlePosition}/>
-        <MyInput type='text' name='Date-start' placeholder='Date-start*' onChange={handleDatestart}/>  
-        <MyInput type='text' name='Date-to' placeholder='Date-to*' onChange={handleDateto}/>  
-        <MyInput type='text' name='Description' placeholder='Description*' onChange={handleDescription}/>  
-        </div>   
-        <div className='Experience_title'>Experience 2</div>
-        <div className='Experience2'>
-        <MyInput type='text' name='Institute/Organization' placeholder='Institute/Organization*'  />
-        <MyInput type='text' name='Position' placeholder='Position' />
-        <MyInput type='text' name='Duration' placeholder='Duration*' />  
-        <MyInput type='text' name='Description' placeholder='Description*' />  
-        </div>     
-        <div className='Experience_title'>Experience 3</div>
-        <div className='Experience3'>
-        <MyInput type='text' name='Institute/Organization' placeholder='Institute/Organization*'  />
-        <MyInput type='text' name='Position' placeholder='Position' />
-        <MyInput type='text' name='Duration' placeholder='Duration*' />  
-        <MyInput type='text' name='Description' placeholder='Description*' />  
-        </div>                    
+        <div>
+            <MyInput type='text' name='Institute' placeholder='Institute/Organization*'  onChange={handleInstitute}/>
+            <MyInput type='text' name='Position' placeholder='Position' onChange={handlePosition}/>
+            <MyInput type='text' name='Date-start' placeholder='Date-start*' onChange={handleDatestart}/>  
+            <MyInput type='text' name='Date-to' placeholder='Date-to*' onChange={handleDateto}/>  
+            <MyInput type='text' name='Description' placeholder='Description*' onChange={handleDescription}/>  
+                <div className='LS-Forms-btns'>
+                    <MyButton isSecondary='True'><RiDeleteBin6Line/></MyButton>
+                    <MyButton name='Done'><BsCheckLg/></MyButton>  
+                </div> 
+        </div>    
+        <MyButton name='Add Experience' isSecondary='True'><AiOutlinePlus/></MyButton>
+
     </div>
     return(
             <div className='ExperienceInfo-container'>

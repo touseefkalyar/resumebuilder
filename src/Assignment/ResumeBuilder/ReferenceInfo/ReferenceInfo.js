@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import MyInput from '../../../components/MyInput';
 import './ReferenceInfo.css';
 import DropDownField from '../../../components/dropdownfield';
-
+import MyButton from '../../../components/MyButton';
+import {BsCheckLg} from 'react-icons/bs';
+import {AiOutlinePlus} from 'react-icons/ai';
+import {RiDeleteBin6Line} from 'react-icons/ri';
 
 export default function ReferenceInfo({sendReferenceInfo}){
 
@@ -35,21 +38,20 @@ export default function ReferenceInfo({sendReferenceInfo}){
     )
 
     const refSection=   <div className='ReferenceInfo-Form'>
-    <div className='Reference_title'>Reference 1</div>
-    <div className='Reference1'>
+
+    <div>
     <MyInput type='text' name='Name' placeholder='Name'  onChange={handleName}/>
     <MyInput type='text' name='Organization' placeholder='Organization*'  onChange={handleOrg}/>
     <MyInput type='text' name='Position' placeholder='Position' onChange={handlePosition}/>
     <MyInput type='text' name='Phone' placeholder='Phone' onChange={handlePhone}/>  
     <MyInput type='text' name='Email' placeholder='Email' onChange={handleEmail}/>  
-    </div>   
-    <div className='Reference_title'>Reference 2</div>
-    <div className='Reference2'>
-    <MyInput type='text' name='Institute/Organization' placeholder='Institute/Organization*'  />
-    <MyInput type='text' name='Position' placeholder='Position' />
-    <MyInput type='text' name='Duration' placeholder='Duration*' />  
-    <MyInput type='text' name='Description' placeholder='Description*' />  
-    </div>                       
+    <div className='LS-Forms-btns'>
+                    <MyButton isSecondary='True'><RiDeleteBin6Line/></MyButton>
+                    <MyButton name='Done'><BsCheckLg/></MyButton>  
+                </div> 
+        </div>    
+        <MyButton name='Add Reference' isSecondary='True'><AiOutlinePlus/></MyButton> 
+                     
 </div>
     return(
             <div className='ReferenceInfo-container'>
