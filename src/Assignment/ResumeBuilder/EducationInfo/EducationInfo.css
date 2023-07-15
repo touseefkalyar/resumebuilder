@@ -1,0 +1,40 @@
+.EducationInfo-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+   
+}
+
+
+.EducationInfo-Form{
+    
+     border-bottom: 1px solid rgba(190, 185, 185, 0.617) ;
+     padding-bottom: 10px ;
+}
+
+.EducationInfo-Form>button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.EducationInfo-Form>button:hover{
+    background-color: #43298612;
+    border: 1px solid #4314B6;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.education_university{
+    border: 1px solid rgba(190, 185, 185, 0.617) ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.education_university>button{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+}

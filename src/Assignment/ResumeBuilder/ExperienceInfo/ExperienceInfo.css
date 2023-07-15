@@ -1,0 +1,45 @@
+.ExperienceInfo-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.ex-heading{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.ExperienceInfo-Form{
+     border: 1px solid rgba(190, 185, 185, 0.617) ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.Experience_title{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-style: Poppins;
+    font-weight: 500;
+
+}
+.Experience1,.Experience2,.Experience3{
+    place-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:50px;
+    grid-row-gap: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ExperienceInfo-Form input{
+    height: 50px;
+    width: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.446);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+}
+

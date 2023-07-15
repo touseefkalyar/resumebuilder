@@ -1,0 +1,24 @@
+.btn{
+    color:white;
+    background-color: #4314B6;
+    width:150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .btn-secondary{
+    width:100px;
+    height: 40px;
+    font-size: 20px;
+ }
+
+ .btn:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+ }
